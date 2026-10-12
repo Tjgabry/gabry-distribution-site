@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Thomas Gabry, distributeur agréé LiCA Technology</title>
+<meta name="description" content="Thomas Gabry, distributeur agréé LiCA Technology pour Maurice et les Mascareignes. Traitement magnétique sans produit chimique ni électricité, conçu et fabriqué au Luxembourg.">
+<meta name="author" content="Thomas Gabry">
+<link rel="canonical" href="https://gabry-distribution.com/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:url" content="https://gabry-distribution.com/">
+<meta property="og:site_name" content="Gabry Distribution">
+<meta property="og:title" content="Thomas Gabry, distributeur agréé LiCA Technology, Mascareignes">
+<meta property="og:description" content="Traitement magnétique sans produit chimique ni électricité, conçu et fabriqué au Luxembourg. Flottes, chaudières, plans d'eau. Pose et suivi à Maurice.">
+<meta name="theme-color" content="#123a3f">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23123a3f'/%3E%3Ctext x='16' y='22.5' font-family='Georgia,serif' font-size='19' font-weight='700' fill='%23f3f6f5' text-anchor='middle'%3EG%3C/text%3E%3C/svg%3E">
+<style>
+/* Layout : une colonne de lecture, sections séparées par des filets, chiffres en tableau à colonnes alignées. */
+:root{
+  --bg:#f6f8f7; --surface:#ffffff; --ink:#14201f; --muted:#4c5c5a;
+  --line:#d5dedc; --accent:#123a3f; --accent-ink:#f3f6f5; --link:#0f5c63;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Charter,"Bitstream Charter",Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,"SF Mono",Menlo,Consolas,"Liberation Mono",monospace;
+  --w:44rem;
+  color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root{
+  --bg:#0f1716; --surface:#16211f; --ink:#e4ecea; --muted:#9fb1ae;
+  --line:#2a3a38; --accent:#8fd0c8; --accent-ink:#0f1716; --link:#8fd0c8;
+  color-scheme:dark;
+}}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:1.0625rem/1.6 var(--sans);padding-inline:max(1.25rem,env(safe-area-inset-left))}
+.wrap{max-width:var(--w);margin-inline:auto}
+a{color:var(--link);text-underline-offset:.18em;text-decoration-thickness:1px}
+a:hover{text-decoration-thickness:2px}
+a:focus-visible{outline:2px solid var(--link);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.2;text-wrap:balance;margin:0}
+p{margin:0}
+.label{font:600 .75rem/1.3 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+
+/* En-tête */
+.top{display:flex;justify-content:space-between;align-items:baseline;gap:1rem;padding-block:1.25rem;border-bottom:1px solid var(--line)}
+.top .name{font:600 1rem/1 var(--serif);color:var(--ink);text-decoration:none}
+.top nav a{font-size:.9375rem}
+
+/* Ouverture */
+.hero{padding-block:3.5rem 3rem;display:grid;gap:1.25rem}
+.hero h1{font-size:clamp(2.25rem,7vw,3.25rem);letter-spacing:-.01em}
+.hero .role{font:400 clamp(1.125rem,3.2vw,1.375rem)/1.35 var(--serif);color:var(--muted)}
+.hero .promise{font-size:1.1875rem;max-width:38rem}
+.cta{display:flex;flex-wrap:wrap;gap:.75rem;margin-top:.5rem}
+.btn{display:inline-flex;align-items:center;min-height:2.875rem;padding:.6rem 1.15rem;border-radius:4px;font-weight:600;font-size:1rem;text-decoration:none;border:1px solid var(--accent)}
+.btn-main{background:var(--accent);color:var(--accent-ink)}
+.btn-alt{color:var(--link);background:transparent;border-color:var(--line)}
+.btn:hover{text-decoration:none;filter:brightness(1.08)}
+
+section{padding-block:2.75rem;border-top:1px solid var(--line);display:grid;gap:1.5rem}
+section > h2{font-size:clamp(1.5rem,4.2vw,1.875rem)}
+.intro{color:var(--muted);max-width:38rem}
+
+/* Usages */
+.uses{display:grid;gap:0}
+.use{display:grid;grid-template-columns:11rem 1fr;gap:.5rem 1.75rem;padding-block:1.4rem;border-top:1px solid var(--line)}
+.use:first-child{border-top:0;padding-top:0}
+.use h3{font-size:1.25rem}
+.nb{white-space:nowrap}
+.use .prod{font:500 .8125rem/1.5 var(--mono);color:var(--muted);margin-top:.4rem}
+.use div{min-width:0;display:grid;gap:.6rem}
+
+/* Méthode : vraie séquence, donc numérotée */
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:1.25rem;counter-reset:s}
+.steps li{display:grid;grid-template-columns:2.25rem 1fr;gap:1rem;counter-increment:s}
+.steps li::before{content:counter(s);font:600 1.125rem/1 var(--serif);color:var(--accent-ink);background:var(--accent);width:2.25rem;height:2.25rem;border-radius:50%;display:grid;place-items:center}
+.steps strong{display:block;font-family:var(--serif);font-size:1.125rem;font-weight:600;margin-bottom:.15rem}
+.steps p{color:var(--muted)}
+.local{padding:1rem 1.15rem;background:var(--surface);border:1px solid var(--line);border-radius:4px}
+
+/* Chiffres */
+.figs{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.figs th,.figs td{text-align:left;vertical-align:baseline;padding:.75rem .75rem .75rem 0;border-bottom:1px solid var(--line)}
+.figs thead th{font:600 .75rem/1.3 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted);padding-top:0}
+.figs td:first-child{font:600 1.25rem/1.2 var(--mono);white-space:nowrap;color:var(--ink);width:8.5rem}
+.figs td:last-child{padding-right:0;white-space:nowrap;font-size:.9375rem}
+.note{font-size:.9375rem;color:var(--muted);max-width:38rem}
+
+/* Contact */
+.contact dl{margin:0;display:grid;grid-template-columns:7rem 1fr;gap:.85rem 1.25rem}
+.contact dt{font:600 .75rem/1.9 var(--sans);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.contact dd{margin:0;font-size:1.125rem;min-width:0;overflow-wrap:anywhere}
+
+footer{border-top:1px solid var(--line);padding-block:1.75rem 2.5rem;font-size:.875rem;color:var(--muted);display:grid;gap:.35rem}
+
+@media (max-width:40rem){
+  .hero{padding-block:2.5rem 2.25rem}
+  .use{grid-template-columns:1fr}
+  .figs thead{display:none}
+  .figs tr{display:grid;grid-template-columns:6.25rem 1fr;gap:.2rem 1rem;padding-block:.85rem;border-bottom:1px solid var(--line)}
+  .figs td{border:0;padding:0}
+  .figs td:first-child{grid-row:span 2;width:auto;font-size:1.0625rem;white-space:normal}
+  .figs td:last-child{white-space:normal}
+  .contact dl{grid-template-columns:1fr;gap:.15rem}
+  .contact dd{margin-bottom:.75rem}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <a class="name" href="#">Thomas Gabry</a>
+  <nav aria-label="Navigation"><a href="#contact">Contact</a></nav>
+</header>
+
+<main>
+<div class="hero">
+  <p class="label">Maurice et Mascareignes</p>
+  <h1>Thomas Gabry</h1>
+  <p class="role">Distributeur agréé LiCA Technology, Mascareignes</p>
+  <p class="promise">Un traitement magnétique sans produit chimique ni électricité, conçu et fabriqué au Luxembourg. Il sert à réduire la consommation de carburant et l'entartrage des circuits d'eau.</p>
+  <div class="cta">
+    <a class="btn btn-main" href="mailto:thomas@gabry-distribution.com">Écrire un email</a>
+    <a class="btn btn-alt" href="https://wa.me/23054769472">WhatsApp</a>
+  </div>
+  <p class="local">Pose et suivi assurés localement, à Maurice.</p>
+</div>
+
+<section aria-labelledby="usages">
+  <h2 id="usages">Par usage</h2>
+  <div class="uses">
+    <article class="use">
+      <h3>Flottes de véhicules</h3>
+      <div>
+        <p>L'<span class="nb">E-CLEAN'CARBURANT+</span> se pose sur l'arrivée de carburant, après le filtre. Pas de découpe de tuyau, pas de modification du moteur. Il s'utilise sur les moteurs diesel et essence : camions, bus, véhicules légers.</p>
+        <p class="prod"><span class="nb">E-CLEAN'CARBURANT+ (ECC+)</span></p>
+      </div>
+    </article>
+    <article class="use">
+      <h3>Chaudières et circuits d'eau chaude</h3>
+      <div>
+        <p>La gamme EMB traite les réseaux d'eau industriels contre le tartre. La version EMB HT supporte des circuits jusqu'à 300 °C. Côté brûleur, l'ECCOM+ se pose sur l'arrivée de gaz ou de fioul, sans réglage du brûleur.</p>
+        <p class="prod"><span class="nb">E-ACTI'WATER+ EMB et EMB HT</span>, DN32 à DN500 · <span class="nb">E-CLEAN'COMBUSTIBLE+ (ECCOM+)</span></p>
+      </div>
+    </article>
+    <article class="use">
+      <h3>Bassins, lacs et lagunes</h3>
+      <div>
+        <p>L'<span class="nb">E-ACTI'SPHERE+</span> s'immerge dans le plan d'eau. Le kit <span class="nb">E-ACTI'ETANG+</span> équipe un hectare. Pour une lagune ou une station d'épuration, LiCA fait d'abord une étude de dimensionnement.</p>
+        <p class="prod"><span class="nb">E-ACTI'SPHERE+ ·</span> <span class="nb">KIT E-ACTI'ETANG+</span></p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section aria-labelledby="chiffres">
+  <h2 id="chiffres">Chiffres publiés par LiCA</h2>
+  <p class="intro">Résultats publiés par le fabricant sur son site. Ils donnent un ordre de grandeur. La mesure faite chez vous reste la seule qui compte.</p>
+  <table class="figs">
+    <thead><tr><th scope="col">Chiffre</th><th scope="col">Mesuré sur</th><th scope="col">Source</th></tr></thead>
+    <tbody>
+      <tr><td>−5,5 %</td><td>de gasoil consommé par des camions</td><td><a href="https://lica-technology.com/nos-realisations/camions/">Camions</a></td></tr>
+      <tr><td>−5,5 %</td><td>de gasoil consommé par des bus</td><td><a href="https://lica-technology.com/nos-realisations/bus/">Bus</a></td></tr>
+      <tr><td>−5 %</td><td>de gaz consommé par une chaudière</td><td><a href="https://lica-technology.com/nos-realisations/chaudiere-a-gaz/">Chaudière à gaz</a></td></tr>
+      <tr><td>−13 %</td><td>d'électricité sur les pompes d'une boucle de chauffage</td><td><a href="https://lica-technology.com/nos-realisations/boucle-de-chauffage/">Boucle de chauffage</a></td></tr>
+      <tr><td>−60 %</td><td>de floculants dans une station d'épuration</td><td><a href="https://lica-technology.com/nos-realisations/stations-d-epuration/">Station d'épuration</a></td></tr>
+      <tr><td>3 à 8 sem.</td><td>avant les premières améliorations d'un plan d'eau</td><td><a href="https://lica-technology.com/systemes/e-acti-sphere/">E-ACTI'SPHERE+</a></td></tr>
+    </tbody>
+  </table>
+  <p class="note">Fiches techniques complètes sur <a href="https://www.lica-technology.com"><span class="nb">lica-technology.com</span></a>.</p>
+</section>
+
+<section class="contact" id="contact" aria-labelledby="contact-t">
+  <h2 id="contact-t">Contact</h2>
+  <dl>
+    <dt>Email</dt><dd><a href="mailto:thomas@gabry-distribution.com">thomas@gabry-distribution.com</a></dd>
+    <dt>WhatsApp</dt><dd><a href="https://wa.me/23054769472">+230 5476 9472</a></dd>
+    <dt>Basé à</dt><dd>Maurice</dd>
+  </dl>
+</section>
+</main>
+
+<footer>
+  <p>© 2026 Thomas Gabry, distributeur indépendant agréé.</p>
+  <p>LiCA est une marque de LICA SARL (Luxembourg).</p>
+</footer>
+
+</div>
+</body>
+</html>
